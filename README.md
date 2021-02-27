@@ -4,3 +4,4 @@
 3. retrieved news title and article teaser
 4. working webscraping code for news, facts, and data. Image TBD.
 5. update to image code, still not functional
+6. web scraping code complete
