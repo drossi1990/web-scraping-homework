@@ -45,10 +45,13 @@ def image_link(browser):
 #navigates to JPLs daily image page, selects first image, and then copies the SRC of that image for later use
     jpl_url = ('https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars')
     browser.visit(jpl_url)
+    time.sleep(1)
     elems = browser.find_by_tag("a")
     link = elems[6]['href']
     browser.visit(link)
+    time.sleep(1)
     elems = browser.find_by_tag("img")
+    time.sleep(1)
     try:
         image_link = elems[2]['src']
     except AttributeError:
@@ -91,8 +94,5 @@ def hemisphere(browser):
 
     return(hemisphere_image_urls)
 
-
-
-# print(scrape_all())
 
 

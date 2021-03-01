@@ -6,3 +6,4 @@
 5. update to image code, still not functional
 6. web scraping code complete
 7. converted jupyter notebook to app.py
+8. added flask app, news not displaying correctly in template
