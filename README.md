@@ -8,3 +8,5 @@
 7. converted jupyter notebook to app.py
 8. added flask app, news not displaying correctly in template
 9. Updated styling, fixed bug with news display, added png of final application
+10. Deleted old files
+11. Update README
