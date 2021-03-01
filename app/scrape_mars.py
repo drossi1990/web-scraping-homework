@@ -26,6 +26,7 @@ def scrape_all():
 def mars_news_pull(browser):
     marsnewsurl = "https://mars.nasa.gov/news"
     browser.visit(marsnewsurl)
+    time.wait(1)
     html=browser.html
     news_soup = bs(html, 'html.parser')
 
@@ -72,7 +73,7 @@ def get_mars_facts():
     mars_df.columns = ["Characteristics", "Value"]
     mars_df.set_index(["Characteristics"])
 
-    return mars_df.to_html()
+    return mars_df.to_html(classes="table table-striped")
 
 def hemisphere(browser):
 
